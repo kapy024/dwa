@@ -1,0 +1,61 @@
+.btn-primary {
+	border-color: #26a69a !important;
+}
+
+.btn-cancel:hover {
+	background-color: rgba(255, 11, 11, 0.67) !important;
+}
+
+.logout-btn:hover {
+	background-color: rgba(237, 61, 61, 0.76);
+}
+
+.line-decorator {
+	position: relative;
+}
+
+.line-decorator:after,
+.line-decorator:before {
+	content: "";
+	position: absolute;
+	width: 150px;
+	height: 2px;
+	background-color: currentcolor;
+	top: 0.6em;
+}
+
+.line-decorator:after {
+	right: -80px;
+}
+
+.line-decorator:before {
+	left: -80px;
+}
+
+@media (max-width: 300px) {
+	.line-decorator:after,
+	.line-decorator:before {
+		width: 110px;
+	}
+	.line-decorator:after {
+		right: -0px;
+	}
+
+	.line-decorator:before {
+		left: -0px;
+	}
+}
+
+@media (min-width: 767px) {
+	.line-decorator:after,
+	.line-decorator:before {
+		width: 150px;
+	}
+	.line-decorator:after {
+		right: -100px;
+	}
+
+	.line-decorator:before {
+		left: -100px;
+	}
+}
